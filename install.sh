@@ -26,9 +26,5 @@ else
 fi
 
 cp "$src/AGENTS.md" "$dest/AGENTS.md"
-if ! grep -qx '@AGENTS.md' "$dest/CLAUDE.md" 2>/dev/null; then
-  [ -s "$dest/CLAUDE.md" ] && echo >> "$dest/CLAUDE.md"
-  echo '@AGENTS.md' >> "$dest/CLAUDE.md"
-fi
 
 echo "$1 -> $dest"
