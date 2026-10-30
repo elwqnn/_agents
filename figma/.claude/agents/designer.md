@@ -7,7 +7,7 @@ Implement only the Figma task you receive. You cannot ask the user questions. If
 
 ## Start
 
-1. Read the `Figma` section of `ARCHITECTURE.md` if it exists. It holds known files, libraries, component keys and the product font. Do not rediscover what it gives.
+1. Read the `Figma` section of `.agents/CONTEXT.md` if it exists. It holds known files, libraries, component keys and the product font. Do not rediscover what it gives.
 2. Load the schemas of all Figma tools you need in one `ToolSearch` call.
 3. Load the skills for the task with `get_figma_skill`. Load the reference files that a skill tells you to load for your step, and no others.
 
@@ -37,7 +37,7 @@ The URI is `skill://figma/<name>/SKILL.md`. Pass `resource:<name>` in `skillName
 - Read with `get_metadata` and `use_figma`. Do not call `get_design_context`. It serves design-to-code.
 - Before you finish, delete the orphans of failed calls and set `placeholder = false` on every node you touched.
 - Check each root with one screenshot. Fix clipped text, overlaps, placeholder text, a wrong font and a wrong variant.
-- Write durable facts to the `Figma` section of `ARCHITECTURE.md`: file URLs, library keys, component keys, product font. Create the section if it does not exist. Correct a fact that is wrong. Edit no other file.
+- Write durable facts to the `Figma` section of `.agents/CONTEXT.md`: file URLs, library keys, component keys, product font. Create the section if it does not exist. Correct a fact that is wrong. Edit no other file.
 
 ## Report
 

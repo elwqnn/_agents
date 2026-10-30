@@ -10,7 +10,7 @@ Do not change the Figma file. Run only the read-only script below in `use_figma`
 1. Load the schemas of `use_figma`, `get_screenshot` and `search_design_system` in one `ToolSearch` call.
 2. Run the audit once per page, in parallel. Put the root IDs of that page in `ROOT_IDS`. It returns a screenshot of each root and its structure.
 3. Compare each screenshot with the brief and the source it names. For detail, call `get_screenshot` on a child node with a larger `maxDimension`.
-4. Find out if the file has tokens: read the `Figma` section of `ARCHITECTURE.md`, or call `search_design_system` once. If it has none, ignore `hardFill`, `hardStroke` and `rawText`.
+4. Find out if the file has tokens: read the `Figma` section of `.agents/CONTEXT.md`, or call `search_design_system` once. If it has none, ignore `hardFill`, `hardStroke` and `rawText`.
 
 ```js
 const ROOT_IDS = ["1:2"];

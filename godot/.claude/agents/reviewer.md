@@ -12,6 +12,6 @@ Format: one line per finding. Give file:line, the problem, and a concrete fix.
 
 ## Godot 4
 
-Check each engine API in the diff against `.claude/godot-docs/`. Report a class, method, property or signal that does not exist in the engine version of `godot --version`.
+Check each engine API in the diff against `.agents/godot-docs/`. Report a class, method, property or signal that does not exist in the engine version of `godot --version`.
 Run `godot --headless --path . --check-only -s <file.gd>` on each changed script. Report each parse error.
 Report Godot 3 syntax, hand-written `uid=` values, and rendering features that the renderer in `project.godot` does not support.
