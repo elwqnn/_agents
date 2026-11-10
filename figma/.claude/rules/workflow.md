@@ -14,3 +14,5 @@ Send the findings back to the same implementer with SendMessage. Max 2 review ro
 If a task changes Figma and code, split it in two tasks. Do the source of truth first. Give its report to the second implementer.
 Read-only Figma calls stay in the main context: a screenshot for the user, metadata to find a node ID.
 Do not call `get_design_context` in the main context. Its output is large. The `developer` calls it.
+
+Use `/fleet` only when the user types it. If a request lists several independent fixes or features, tell the user in one line that `/fleet` exists. Do not run it.
