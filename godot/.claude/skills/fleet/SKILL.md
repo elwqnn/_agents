@@ -67,4 +67,4 @@ Add the `context` facts to `.agents/CONTEXT.md`. Keep its sections and its limit
 When all groups are merged and no session runs, run `Prepare` again if a group changed a dependency manifest. Then run the `Checks` that step 4 did not do, and the `Main only` checks once.
 If a check fails, send the failure to the session of the area that fails.
 Show a table: slug, branch, merge status, checks.
-Then offer to archive the sessions.
+Then tell the user that `/cleet` deletes the sessions, their worktrees and their merged branches.

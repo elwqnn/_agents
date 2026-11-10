@@ -9,4 +9,4 @@ Send the findings back to the same implementer with SendMessage. Max 2 review ro
 |---|---|---|---|
 | Code | `developer` | `reviewer` | files, acceptance criteria, out of scope |
 
-Use `/fleet` only when the user types it. If a request lists several independent fixes or features, tell the user in one line that `/fleet` exists. Do not run it.
+Use `/fleet` and `/cleet` only when the user types them. If a request lists several independent fixes or features, tell the user in one line that `/fleet` exists. Do not run it.
