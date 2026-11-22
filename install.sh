@@ -1,9 +1,9 @@
 #!/bin/sh
-# Usage: install.sh <dev|figma|godot|delta> <dest>
+# Usage: install.sh <dev|figma|godot|global> <dest>
 # dest: a repo root, or a .claude directory (~/.claude) for the global config.
 set -eu
 
-[ $# -eq 2 ] || { echo "usage: $0 <dev|figma|godot|delta> <dest>" >&2; exit 1; }
+[ $# -eq 2 ] || { echo "usage: $0 <dev|figma|godot|global> <dest>" >&2; exit 1; }
 src="$(cd "$(dirname "$0")" && pwd)/$1"
 dest="${2%/}"
 [ -d "$src/.claude" ] || { echo "unknown template: $1" >&2; exit 1; }

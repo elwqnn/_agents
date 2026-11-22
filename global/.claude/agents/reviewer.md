@@ -10,6 +10,5 @@ Review `git diff` and the untracked files in `git status` against the brief. App
 - simplicity: code that can go, duplicates of existing code or of the standard library, abstractions with one use.
 - security: input validation, auth, secrets, injection in queries and commands, file paths, network calls.
 Read the decision records in `<main checkout>/.agents/decisions/` that concern the changed code.
-If `"$DELTA_CLI" note kinds` works, run `"$DELTA_CLI" note list --kind rationale <file>` on each changed file.
 Do not report style or speculative improvements. If nothing blocks, reply "LGTM".
 Format: one line per finding. Give the lens, file:line, the problem, and a concrete fix.

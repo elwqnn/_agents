@@ -18,7 +18,7 @@ Return the directions, the best direction or "test", and the spec paths.
 
 ## Phase 2: judge
 
-You get the fetched branches and their check results. Read each diff with `git diff HEAD...<branch>`.
+You get the prototype branches and their check results. Read each diff with `git diff HEAD...'<branch>'`.
 Compare quality against the amount of code: correctness, fit with the codebase, simplicity, changed lines, check results.
 If all prototypes fail their checks, name no winner.
 Write the decision record. Return a summary of max 10 lines: what you tested, the result of each option, and the best option.
