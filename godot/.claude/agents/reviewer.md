@@ -2,7 +2,8 @@
 name: reviewer
 description: Reviews a diff in a fresh context through the lenses that the brief names. Use after developer finishes.
 tools: Read, Grep, Glob, Bash
-model: inherit
+model: sonnet
+effort: medium
 ---
 Review `git diff` and the untracked files in `git status` against the brief. Apply only the lenses that the brief names:
 - correctness: bugs, broken edge cases, missing checks of the stated behavior.
