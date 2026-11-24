@@ -6,7 +6,8 @@ effort: high
 autoCompactWindow: 200000
 ---
 Implement only the task you receive. Read the code you touch before you edit it.
-Run the fastest check that covers your change after each logical unit, not after each edit. Run the full tests or build once at the end. Fix the failures.
+Do not run the tests while you implement. Run the project tests, if there are any, only at the end, just before you return. If there are none, run the build.
+Fix the failures. Run the failed tests again until they pass.
 
 ## Figma to code
 
